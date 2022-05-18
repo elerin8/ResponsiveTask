@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    border: 3px solid grey;
+    width: 75%;
+    text-align: center;
+    
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../img/profile1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0;
+}
+
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+}
+.footer ul li:hover, .footer ul li a:hover {
+    color: beige;
+    transform: scale(1.4);
+}
+
+
+
+
+@media (min-width: 480px) { 
+    .tablet {
+        background-image: url(../img/profile1.jpg);
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .container {
+        background-color: rgb(95, 95, 171);
+        border: 3px solid blanchedalmond ;
+        color: rgb(51, 42, 129);
+        width: 100%;
+    }
+    
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .smartphone {
+        display: none;
+        background-image: url(../img/profile2.jpg);
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .container {
+        background-color: rgb(176, 73, 194);
+        border: 4px solid rgb(149, 89, 172);
+        color: rgb(60, 3, 55);
+        
+    }
+}
+
+
+@media (min-width: 1024px){
+    .laptop {
+        display: block;
+        background-image: url(../img/profile3.jpg);
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .container {
+        background-color: rgb(151, 52, 43);
+        border: 3px solid rgb(216, 209, 74);
+        color:rgb(61, 49, 11) ;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .laptop {
+        display: none;
+        background-image: url(../img/profile4.jpg);
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .container {
+        background-color: coral;
+        border: 4px solid rgb(97, 97, 21);
+        color: rgb(89, 80, 7);
+        width: 75%;
+    }
+
+    
+    .header h1 {
+        margin: 3rem auto;
+    }
+    .navigation ul li {
+        display: inline-block;
+        width: 16rem;
+    }
+    
+    .navigation ul li:not(:last-child) {
+        border-bottom: 1px solid black;
+        margin-right: 4rem;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+
+}
